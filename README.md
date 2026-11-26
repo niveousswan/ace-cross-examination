@@ -38,16 +38,6 @@ python evaluate.py         # full report -> results/
 | Q5 Consistency | same contradiction checks against the answer to a rephrased question | reject |
 | Q6 Implication | same checks against the rest of the admissible record (stricter aboutness gate) | reject |
 
-## Headline results (blind set, 60 claims)
-
-| Condition | Hit rate | False alarms | d′ [95% CI] | AUC |
-|---|---|---|---|---|
-| Accept all (unstructured use) | 0.00 | 0.00 | −0.16 | 0.50 |
-| Evidence check only (Q2) | 0.17 | 0.00 | 1.12 [0.74, 1.40] | 0.71 |
-| Re-ask only (Q5) | 0.08 | 0.04 | 0.24 [−0.93, 1.22] | 0.71 |
-| **ACE full (Q1–Q6)** | **0.69** | **0.08** | **1.78 [1.08, 2.79]** | **0.86** |
-
-Development set (tuned, optimistic): d′ 3.08. Seeded mutations (279 claims): d′ 3.14.
 
 ## Limits
 
