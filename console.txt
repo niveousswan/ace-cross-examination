@@ -1,0 +1,38 @@
+
+=== DEV (24 cases, 122 claims) ===
+Accept all (unstructured use)    hit 0.00  FA 0.00  d' -0.05  acc 0.47  AUC 0.50
+Reject all (blanket doubt)       hit 1.00  FA 1.00  d' 0.05  acc 0.53  AUC 0.50
+Evidence check only (Q2)         hit 0.25  FA 0.02  d' 1.27  acc 0.59  AUC 0.75   [d' 95% CI 0.70, 1.93]
+Re-ask only (Q5)                 hit 0.32  FA 0.00  d' 1.93  acc 0.64  AUC 0.89   [d' 95% CI 1.57, 2.27]
+ACE full (Q1-Q6)                 hit 0.88  FA 0.02  d' 3.08  acc 0.93  AUC 0.98   [d' 95% CI 2.60, 3.78]
+ACE without Q1                   hit 0.86  FA 0.02  d' 3.01  acc 0.92  AUC 0.98   [d' 95% CI 2.54, 3.68]
+ACE without Q2                   hit 0.71  FA 0.00  d' 2.92  acc 0.84  AUC 0.98   [d' 95% CI 2.66, 3.21]
+ACE without Q3                   hit 0.85  FA 0.02  d' 2.94  acc 0.91  AUC 0.98   [d' 95% CI 2.43, 3.67]
+ACE without Q4                   hit 0.65  FA 0.02  d' 2.31  acc 0.80  AUC 0.91   [d' 95% CI 1.75, 3.01]
+ACE without Q5                   hit 0.83  FA 0.02  d' 2.88  acc 0.90  AUC 0.94   [d' 95% CI 2.40, 3.60]
+ACE without Q6                   hit 0.88  FA 0.02  d' 3.08  acc 0.93  AUC 0.98   [d' 95% CI 2.60, 3.78]
+by flaw: {'direction': '6/6', 'fabricated_cit': '4/4', 'misconception': '8/10', 'negation': '3/3', 'number': '13/14', 'overgeneral': '6/6', 'relational': '1/2', 'substitution': '10/14', 'undefined_form': '2/2', 'unsupported': '2/2', 'vague': '2/2'}
+diagnosis: {'correct': 55, 'detected': 57, 'rate': 0.9649122807017544}
+ACE - evidence-only d': (1.8268672942832844, (1.4549906279220204, 2.250718328843502))
+ACE - reask-only d': (1.2498465505396799, (0.6894535725868125, 1.8425098053825335))
+
+=== BLIND (12 cases, 60 claims) ===
+Accept all (unstructured use)    hit 0.00  FA 0.00  d' -0.16  acc 0.40  AUC 0.50
+Reject all (blanket doubt)       hit 1.00  FA 1.00  d' 0.16  acc 0.60  AUC 0.50
+Evidence check only (Q2)         hit 0.17  FA 0.00  d' 1.12  acc 0.50  AUC 0.71   [d' 95% CI 0.74, 1.40]
+Re-ask only (Q5)                 hit 0.08  FA 0.04  d' 0.24  acc 0.43  AUC 0.71   [d' 95% CI -0.93, 1.22]
+ACE full (Q1-Q6)                 hit 0.69  FA 0.08  d' 1.78  acc 0.78  AUC 0.86   [d' 95% CI 1.08, 2.79]
+ACE without Q1                   hit 0.67  FA 0.08  d' 1.70  acc 0.77  AUC 0.85   [d' 95% CI 0.98, 2.79]
+ACE without Q2                   hit 0.56  FA 0.08  d' 1.42  acc 0.70  AUC 0.85   [d' 95% CI 0.64, 2.47]
+ACE without Q3                   hit 0.58  FA 0.04  d' 1.76  acc 0.73  AUC 0.86   [d' 95% CI 1.05, 2.71]
+ACE without Q4                   hit 0.39  FA 0.08  d' 1.01  acc 0.60  AUC 0.71   [d' 95% CI 0.43, 1.85]
+ACE without Q5                   hit 0.69  FA 0.04  d' 2.05  acc 0.80  AUC 0.88   [d' 95% CI 1.51, 2.87]
+ACE without Q6                   hit 0.69  FA 0.08  d' 1.78  acc 0.78  AUC 0.86   [d' 95% CI 1.08, 2.79]
+by flaw: {'direction': '1/2', 'fabricated_cit': '2/2', 'misconception': '3/3', 'negation': '1/1', 'number': '7/8', 'overgeneral': '4/4', 'relational': '0/3', 'substitution': '5/11', 'undefined_form': '1/1', 'vague': '1/1'}
+diagnosis: {'correct': 24, 'detected': 25, 'rate': 0.96}
+ACE - evidence-only d': (0.7536390621804196, (-0.23293166622514316, 1.87451216165612))
+ACE - reask-only d': (1.6280193666109821, (0.904183167867718, 2.485518728945364))
+
+=== SEEDED MUTATIONS (279 claims) ===
+hit 0.92  FA 0.04  d' 3.14  acc 0.94  AUC 0.97   [d' 95% CI 2.71, 3.91]
+by flaw: {'direction': '5/5', 'fabricated_cit': '81/81', 'negation': '23/29', 'number': '24/26', 'overgeneral': '20/26', 'substitution': '30/31'}

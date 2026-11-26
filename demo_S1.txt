@@ -1,0 +1,36 @@
+CASE: Why do a bowling ball and a feather fall differently on Earth but the same way on the Moon?
+
+Claim 1: On Earth, the feather falls more slowly because air resistance is large compared with its weight.
+  Evidence (support 0.72): A feather falls more slowly than a bowling ball on Earth because air resistance is large relative to the feather's weight.
+  VERDICT: ACCEPT
+
+Claim 2: The drag force is given by F = kv^2, which slows the feather.
+  Evidence (support 0.29): A feather falls more slowly than a bowling ball on Earth because air resistance is large relative to the feather's weight.
+  [Q1] State 'F = kv^2' as one testable claim: what does each symbol mean?
+       -> formula uses symbols that are never defined
+  VERDICT: REVISE
+
+Claim 3: The Moon has no significant atmosphere, so there is no air resistance there.
+  Evidence (support 0.97): The Moon has no significant atmosphere, so there is no air resistance.
+  VERDICT: ACCEPT
+
+Claim 4: On the Moon, both objects accelerate at about 3.7 m/s².
+  Evidence (support 0.33): The acceleration due to gravity on the Moon is about 1.6 m/s², roughly one sixth of Earth's.
+  [Q4] What about the case in the evidence? It seems to say otherwise.
+       -> claim gives 3.7 m/s2, evidence gives 1.6 m/s2
+  [Q5] Do I get the same answer if I ask differently?
+       -> re-asked answer disagrees: claim gives 3.7 m/s2, evidence gives 1.6 m/s2
+  VERDICT: REJECT
+
+Claim 5: A 2003 study confirmed that the hammer and feather landed together (Harris, 2003).
+  Evidence (support 0.26): During the Apollo 15 mission in 1971, astronaut David Scott dropped a hammer and a feather on the Moon and they hit the surface at the same time.
+  [Q2] What is the source 'Harris (2003)', and how can I check it?
+       -> citation not found among admissible sources
+  [Q2] Where is the evidence for this in the admissible sources?
+       -> best support 0.26, content coverage 33%
+  VERDICT: REJECT
+
+Claim 6: Without air resistance, all objects fall with the same acceleration regardless of mass.
+  Evidence (support 0.78): In the absence of air resistance, all objects fall with the same constant acceleration, regardless of their mass.
+  VERDICT: ACCEPT
+

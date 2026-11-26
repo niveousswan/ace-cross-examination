@@ -1,0 +1,1149 @@
+{
+ "frozen_thresholds": {
+  "tau_support": 0.2,
+  "tau_coverage": 0.4,
+  "about_q4": 0.5,
+  "about_q6": 0.6,
+  "tau_pair": 0.15
+ },
+ "dev": {
+  "cases": 24,
+  "splitter": [
+   24,
+   24
+  ],
+  "conditions": {
+   "Accept all (unstructured use)": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.0,
+    "false_alarm": 0.0,
+    "d_prime": -0.04721761672179747,
+    "accuracy": 0.4672131147540984,
+    "accept_correct": 1.0,
+    "accept_incorrect": 1.0,
+    "auc": 0.5,
+    "ci": null
+   },
+   "Reject all (blanket doubt)": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 1.0,
+    "false_alarm": 1.0,
+    "d_prime": 0.047217616721796585,
+    "accuracy": 0.5327868852459017,
+    "accept_correct": 0.0,
+    "accept_incorrect": 0.0,
+    "auc": 0.5,
+    "ci": null
+   },
+   "Evidence check only (Q2)": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.24615384615384617,
+    "false_alarm": 0.017543859649122806,
+    "d_prime": 1.2709328411883285,
+    "accuracy": 0.5901639344262295,
+    "accept_correct": 0.9824561403508771,
+    "accept_incorrect": 0.7538461538461538,
+    "auc": 0.7549257759784076,
+    "ci": {
+     "hit_rate": [
+      0.16176470588235295,
+      0.3333333333333333
+     ],
+     "false_alarm": [
+      0.0,
+      0.05555555555555555
+     ],
+     "d_prime": [
+      0.6991146443303835,
+      1.9298870200233316
+     ],
+     "accuracy": [
+      0.5409670809095717,
+      0.639344262295082
+     ]
+    }
+   },
+   "Re-ask only (Q5)": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.3230769230769231,
+    "false_alarm": 0.0,
+    "d_prime": 1.9298611534278654,
+    "accuracy": 0.639344262295082,
+    "accept_correct": 1.0,
+    "accept_incorrect": 0.676923076923077,
+    "auc": 0.8912280701754387,
+    "ci": {
+     "hit_rate": [
+      0.20588235294117646,
+      0.45161290322580644
+     ],
+     "false_alarm": [
+      0.0,
+      0.0
+     ],
+     "d_prime": [
+      1.5665865802139425,
+      2.2655982847320115
+     ],
+     "accuracy": [
+      0.5666666666666667,
+      0.7131147540983607
+     ]
+    }
+   },
+   "ACE full (Q1-Q6)": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.8769230769230769,
+    "false_alarm": 0.017543859649122806,
+    "d_prime": 3.0775621699246383,
+    "accuracy": 0.9262295081967213,
+    "accept_correct": 0.9824561403508771,
+    "accept_incorrect": 0.12307692307692308,
+    "auc": 0.9786774628879892,
+    "ci": {
+     "hit_rate": [
+      0.8029545454545454,
+      0.9411764705882353
+     ],
+     "false_alarm": [
+      0.0,
+      0.05555555555555555
+     ],
+     "d_prime": [
+      2.601534566299632,
+      3.7770002315525546
+     ],
+     "accuracy": [
+      0.8852459016393442,
+      0.9669421487603306
+     ]
+    }
+   },
+   "ACE without Q1": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.8615384615384616,
+    "false_alarm": 0.017543859649122806,
+    "d_prime": 3.0082090807171546,
+    "accuracy": 0.9180327868852459,
+    "accept_correct": 0.9824561403508771,
+    "accept_incorrect": 0.1384615384615384,
+    "auc": 0.9784075573549258,
+    "ci": {
+     "hit_rate": [
+      0.7868852459016393,
+      0.928596579476861
+     ],
+     "false_alarm": [
+      0.0,
+      0.05555555555555555
+     ],
+     "d_prime": [
+      2.5399766815134663,
+      3.6780421127513563
+     ],
+     "accuracy": [
+      0.8790322580645161,
+      0.9583419421487603
+     ]
+    }
+   },
+   "ACE without Q2": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.7076923076923077,
+    "false_alarm": 0.0,
+    "d_prime": 2.919038576173255,
+    "accuracy": 0.8442622950819673,
+    "accept_correct": 1.0,
+    "accept_incorrect": 0.29230769230769227,
+    "auc": 0.9778677462887989,
+    "ci": {
+     "hit_rate": [
+      0.6129032258064516,
+      0.8
+     ],
+     "false_alarm": [
+      0.0,
+      0.0
+     ],
+     "d_prime": [
+      2.6573764143423366,
+      3.205460765969192
+     ],
+     "accuracy": [
+      0.7933884297520661,
+      0.8934426229508197
+     ]
+    }
+   },
+   "ACE without Q3": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.8461538461538461,
+    "false_alarm": 0.017543859649122806,
+    "d_prime": 2.943623763537296,
+    "accuracy": 0.9098360655737705,
+    "accept_correct": 0.9824561403508771,
+    "accept_incorrect": 0.15384615384615385,
+    "auc": 0.9781376518218624,
+    "ci": {
+     "hit_rate": [
+      0.75,
+      0.9264705882352942
+     ],
+     "false_alarm": [
+      0.0,
+      0.05555555555555555
+     ],
+     "d_prime": [
+      2.433635817792381,
+      3.6673678264847047
+     ],
+     "accuracy": [
+      0.860655737704918,
+      0.9516225806451613
+     ]
+    }
+   },
+   "ACE without Q4": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.6461538461538462,
+    "false_alarm": 0.017543859649122806,
+    "d_prime": 2.314431328850438,
+    "accuracy": 0.8032786885245902,
+    "accept_correct": 0.9824561403508771,
+    "accept_incorrect": 0.3538461538461538,
+    "auc": 0.9090418353576248,
+    "ci": {
+     "hit_rate": [
+      0.5468394886363637,
+      0.746268656716418
+     ],
+     "false_alarm": [
+      0.0,
+      0.05555555555555555
+     ],
+     "d_prime": [
+      1.7460850548517224,
+      3.0147757054149937
+     ],
+     "accuracy": [
+      0.743801652892562,
+      0.8629032258064516
+     ]
+    }
+   },
+   "ACE without Q5": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.8307692307692308,
+    "false_alarm": 0.017543859649122806,
+    "d_prime": 2.8829548302197248,
+    "accuracy": 0.9016393442622951,
+    "accept_correct": 0.9824561403508771,
+    "accept_incorrect": 0.16923076923076918,
+    "auc": 0.938731443994602,
+    "ci": {
+     "hit_rate": [
+      0.7313432835820896,
+      0.9206349206349206
+     ],
+     "false_alarm": [
+      0.0,
+      0.05555555555555555
+     ],
+     "d_prime": [
+      2.3982735030285163,
+      3.6013938500407114
+     ],
+     "accuracy": [
+      0.85,
+      0.9508196721311475
+     ]
+    }
+   },
+   "ACE without Q6": {
+    "n": 122,
+    "n_flawed": 65,
+    "n_sound": 57,
+    "hit_rate": 0.8769230769230769,
+    "false_alarm": 0.017543859649122806,
+    "d_prime": 3.0775621699246383,
+    "accuracy": 0.9262295081967213,
+    "accept_correct": 0.9824561403508771,
+    "accept_incorrect": 0.12307692307692308,
+    "auc": 0.9784075573549258,
+    "ci": {
+     "hit_rate": [
+      0.8029545454545454,
+      0.9411764705882353
+     ],
+     "false_alarm": [
+      0.0,
+      0.05555555555555555
+     ],
+     "d_prime": [
+      2.601534566299632,
+      3.7770002315525546
+     ],
+     "accuracy": [
+      0.8852459016393442,
+      0.9669421487603306
+     ]
+    }
+   }
+  },
+  "by_flaw": {
+   "direction": {
+    "detected": 6,
+    "total": 6,
+    "recall": 1.0
+   },
+   "fabricated_cit": {
+    "detected": 4,
+    "total": 4,
+    "recall": 1.0
+   },
+   "misconception": {
+    "detected": 8,
+    "total": 10,
+    "recall": 0.8
+   },
+   "negation": {
+    "detected": 3,
+    "total": 3,
+    "recall": 1.0
+   },
+   "number": {
+    "detected": 13,
+    "total": 14,
+    "recall": 0.9285714285714286
+   },
+   "overgeneral": {
+    "detected": 6,
+    "total": 6,
+    "recall": 1.0
+   },
+   "relational": {
+    "detected": 1,
+    "total": 2,
+    "recall": 0.5
+   },
+   "substitution": {
+    "detected": 10,
+    "total": 14,
+    "recall": 0.7142857142857143
+   },
+   "undefined_form": {
+    "detected": 2,
+    "total": 2,
+    "recall": 1.0
+   },
+   "unsupported": {
+    "detected": 2,
+    "total": 2,
+    "recall": 1.0
+   },
+   "vague": {
+    "detected": 2,
+    "total": 2,
+    "recall": 1.0
+   }
+  },
+  "by_subject": {
+   "humanities": {
+    "n": 60,
+    "n_flawed": 32,
+    "n_sound": 28,
+    "hit_rate": 0.84375,
+    "false_alarm": 0.03571428571428571,
+    "d_prime": 2.5957829728186077,
+    "accuracy": 0.9,
+    "accept_correct": 0.9642857142857143,
+    "accept_incorrect": 0.15625,
+    "auc": 0.974330357142857
+   },
+   "science": {
+    "n": 62,
+    "n_flawed": 33,
+    "n_sound": 29,
+    "hit_rate": 0.9090909090909091,
+    "false_alarm": 0.0,
+    "d_prime": 3.393014479069132,
+    "accuracy": 0.9516129032258065,
+    "accept_correct": 1.0,
+    "accept_incorrect": 0.09090909090909094,
+    "auc": 0.9791013584117032
+   }
+  },
+  "diagnosis": {
+   "correct": 55,
+   "detected": 57,
+   "rate": 0.9649122807017544
+  },
+  "ace_vs_evidence_only": [
+   1.8268672942832844,
+   [
+    1.4549906279220204,
+    2.250718328843502
+   ]
+  ],
+  "ace_vs_reask_only": [
+   1.2498465505396799,
+   [
+    0.6894535725868125,
+    1.8425098053825335
+   ]
+  ],
+  "verdicts": {
+   "sound": {
+    "accept": 56,
+    "revise": 1
+   },
+   "flawed": {
+    "revise": 15,
+    "reject": 42,
+    "accept": 8
+   }
+  },
+  "errors": [
+   {
+    "case": "S2",
+    "text": "Plants take in oxygen and release carbon dioxide during photosynthesis.",
+    "flaw": "misconception",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "H1",
+    "text": "Gutenberg built his first press in Paris.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "H4",
+    "text": "Magna Carta was agreed between King Henry and the barons.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "H6",
+    "text": "James Watt invented the spinning jenny.",
+    "flaw": "relational",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "S9",
+    "text": "The phases are caused by Earth's shadow falling on the Moon.",
+    "flaw": "misconception",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "S12",
+    "text": "Plates typically move several metres per year.",
+    "flaw": "number",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "H8",
+    "text": "British cartoons also helped spread the idea that he was tiny.",
+    "flaw": null,
+    "verdict": "revise",
+    "flags": [
+     [
+      "Q2",
+      "unsupported",
+      "best support 0.14, content coverage 17%"
+     ]
+    ]
+   },
+   {
+    "case": "H9",
+    "text": "West Germany built the wall to keep East Germans out.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "H12",
+    "text": "The Black Death was caused by a virus.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": [
+     [
+      "Q5",
+      "not_reproduced",
+      "claim does not reappear when the question is rephrased"
+     ]
+    ]
+   }
+  ]
+ },
+ "blind": {
+  "cases": 12,
+  "splitter": [
+   12,
+   12
+  ],
+  "conditions": {
+   "Accept all (unstructured use)": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.0,
+    "false_alarm": 0.0,
+    "d_prime": -0.15737833045350413,
+    "accuracy": 0.4,
+    "accept_correct": 1.0,
+    "accept_incorrect": 1.0,
+    "auc": 0.5,
+    "ci": null
+   },
+   "Reject all (blanket doubt)": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 1.0,
+    "false_alarm": 1.0,
+    "d_prime": 0.1573783304535059,
+    "accuracy": 0.6,
+    "accept_correct": 0.0,
+    "accept_incorrect": 0.0,
+    "auc": 0.5,
+    "ci": null
+   },
+   "Evidence check only (Q2)": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.16666666666666666,
+    "false_alarm": 0.0,
+    "d_prime": 1.1217775982886327,
+    "accuracy": 0.5,
+    "accept_correct": 1.0,
+    "accept_incorrect": 0.8333333333333334,
+    "auc": 0.7054398148148149,
+    "ci": {
+     "hit_rate": [
+      0.08333333333333333,
+      0.25
+     ],
+     "false_alarm": [
+      0.0,
+      0.0
+     ],
+     "d_prime": [
+      0.7407674316584492,
+      1.4003722996602876
+     ],
+     "accuracy": [
+      0.45,
+      0.55
+     ]
+    }
+   },
+   "Re-ask only (Q5)": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.08333333333333333,
+    "false_alarm": 0.041666666666666664,
+    "d_prime": 0.2417921156234797,
+    "accuracy": 0.43333333333333335,
+    "accept_correct": 0.9583333333333334,
+    "accept_incorrect": 0.9166666666666666,
+    "auc": 0.7123842592592593,
+    "ci": {
+     "hit_rate": [
+      0.0,
+      0.2222222222222222
+     ],
+     "false_alarm": [
+      0.0,
+      0.125
+     ],
+     "d_prime": [
+      -0.9295756755407267,
+      1.22174264061535
+     ],
+     "accuracy": [
+      0.36666666666666664,
+      0.5166666666666667
+     ]
+    }
+   },
+   "ACE full (Q1-Q6)": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.6944444444444444,
+    "false_alarm": 0.08333333333333333,
+    "d_prime": 1.7751049606341456,
+    "accuracy": 0.7833333333333333,
+    "accept_correct": 0.9166666666666666,
+    "accept_incorrect": 0.3055555555555556,
+    "auc": 0.8582175925925927,
+    "ci": {
+     "hit_rate": [
+      0.5277777777777778,
+      0.8611111111111112
+     ],
+     "false_alarm": [
+      0.0,
+      0.20833333333333334
+     ],
+     "d_prime": [
+      1.0803193408149558,
+      2.7934861300457126
+     ],
+     "accuracy": [
+      0.6833333333333333,
+      0.8833333333333333
+     ]
+    }
+   },
+   "ACE without Q1": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.6666666666666666,
+    "false_alarm": 0.08333333333333333,
+    "d_prime": 1.6999228534562547,
+    "accuracy": 0.7666666666666667,
+    "accept_correct": 0.9166666666666666,
+    "accept_incorrect": 0.33333333333333337,
+    "auc": 0.8547453703703703,
+    "ci": {
+     "hit_rate": [
+      0.5277777777777778,
+      0.8333333333333334
+     ],
+     "false_alarm": [
+      0.0,
+      0.20833333333333334
+     ],
+     "d_prime": [
+      0.9831637032840496,
+      2.7934861300457126
+     ],
+     "accuracy": [
+      0.65,
+      0.8833333333333333
+     ]
+    }
+   },
+   "ACE without Q2": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.5555555555555556,
+    "false_alarm": 0.08333333333333333,
+    "d_prime": 1.4174622461910809,
+    "accuracy": 0.7,
+    "accept_correct": 0.9166666666666666,
+    "accept_incorrect": 0.4444444444444444,
+    "auc": 0.8489583333333333,
+    "ci": {
+     "hit_rate": [
+      0.3611111111111111,
+      0.75
+     ],
+     "false_alarm": [
+      0.0,
+      0.20833333333333334
+     ],
+     "d_prime": [
+      0.6362825335422043,
+      2.472120198543477
+     ],
+     "accuracy": [
+      0.5666666666666667,
+      0.8333333333333334
+     ]
+    }
+   },
+   "ACE without Q3": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.5833333333333334,
+    "false_alarm": 0.041666666666666664,
+    "d_prime": 1.7594335131673295,
+    "accuracy": 0.7333333333333333,
+    "accept_correct": 0.9583333333333334,
+    "accept_incorrect": 0.41666666666666663,
+    "auc": 0.8616898148148147,
+    "ci": {
+     "hit_rate": [
+      0.4166666666666667,
+      0.7777777777777778
+     ],
+     "false_alarm": [
+      0.0,
+      0.125
+     ],
+     "d_prime": [
+      1.0512757684892944,
+      2.7071255216033583
+     ],
+     "accuracy": [
+      0.6166666666666667,
+      0.85
+     ]
+    }
+   },
+   "ACE without Q4": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.3888888888888889,
+    "false_alarm": 0.08333333333333333,
+    "d_prime": 1.0071600776845635,
+    "accuracy": 0.6,
+    "accept_correct": 0.9166666666666666,
+    "accept_incorrect": 0.6111111111111112,
+    "auc": 0.708912037037037,
+    "ci": {
+     "hit_rate": [
+      0.25,
+      0.5277777777777778
+     ],
+     "false_alarm": [
+      0.0,
+      0.20833333333333334
+     ],
+     "d_prime": [
+      0.4267081404688862,
+      1.849088992061347
+     ],
+     "accuracy": [
+      0.5,
+      0.6833333333333333
+     ]
+    }
+   },
+   "ACE without Q5": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.6944444444444444,
+    "false_alarm": 0.041666666666666664,
+    "d_prime": 2.048326989686399,
+    "accuracy": 0.8,
+    "accept_correct": 0.9583333333333334,
+    "accept_incorrect": 0.3055555555555556,
+    "auc": 0.8819444444444445,
+    "ci": {
+     "hit_rate": [
+      0.5277777777777778,
+      0.8611111111111112
+     ],
+     "false_alarm": [
+      0.0,
+      0.125
+     ],
+     "d_prime": [
+      1.5115994384806757,
+      2.867755073570227
+     ],
+     "accuracy": [
+      0.7166666666666667,
+      0.9
+     ]
+    }
+   },
+   "ACE without Q6": {
+    "n": 60,
+    "n_flawed": 36,
+    "n_sound": 24,
+    "hit_rate": 0.6944444444444444,
+    "false_alarm": 0.08333333333333333,
+    "d_prime": 1.7751049606341456,
+    "accuracy": 0.7833333333333333,
+    "accept_correct": 0.9166666666666666,
+    "accept_incorrect": 0.3055555555555556,
+    "auc": 0.8582175925925927,
+    "ci": {
+     "hit_rate": [
+      0.5277777777777778,
+      0.8611111111111112
+     ],
+     "false_alarm": [
+      0.0,
+      0.20833333333333334
+     ],
+     "d_prime": [
+      1.0803193408149558,
+      2.7934861300457126
+     ],
+     "accuracy": [
+      0.6833333333333333,
+      0.8833333333333333
+     ]
+    }
+   }
+  },
+  "by_flaw": {
+   "direction": {
+    "detected": 1,
+    "total": 2,
+    "recall": 0.5
+   },
+   "fabricated_cit": {
+    "detected": 2,
+    "total": 2,
+    "recall": 1.0
+   },
+   "misconception": {
+    "detected": 3,
+    "total": 3,
+    "recall": 1.0
+   },
+   "negation": {
+    "detected": 1,
+    "total": 1,
+    "recall": 1.0
+   },
+   "number": {
+    "detected": 7,
+    "total": 8,
+    "recall": 0.875
+   },
+   "overgeneral": {
+    "detected": 4,
+    "total": 4,
+    "recall": 1.0
+   },
+   "relational": {
+    "detected": 0,
+    "total": 3,
+    "recall": 0.0
+   },
+   "substitution": {
+    "detected": 5,
+    "total": 11,
+    "recall": 0.45454545454545453
+   },
+   "undefined_form": {
+    "detected": 1,
+    "total": 1,
+    "recall": 1.0
+   },
+   "vague": {
+    "detected": 1,
+    "total": 1,
+    "recall": 1.0
+   }
+  },
+  "by_subject": {
+   "humanities": {
+    "n": 30,
+    "n_flawed": 18,
+    "n_sound": 12,
+    "hit_rate": 0.6666666666666666,
+    "false_alarm": 0.08333333333333333,
+    "d_prime": 1.6051039541782886,
+    "accuracy": 0.7666666666666667,
+    "accept_correct": 0.9166666666666666,
+    "accept_incorrect": 0.33333333333333337,
+    "auc": 0.8773148148148149
+   },
+   "science": {
+    "n": 30,
+    "n_flawed": 18,
+    "n_sound": 12,
+    "hit_rate": 0.7222222222222222,
+    "false_alarm": 0.08333333333333333,
+    "d_prime": 1.7533026450095783,
+    "accuracy": 0.8,
+    "accept_correct": 0.9166666666666666,
+    "accept_incorrect": 0.2777777777777778,
+    "auc": 0.8587962962962963
+   }
+  },
+  "diagnosis": {
+   "correct": 24,
+   "detected": 25,
+   "rate": 0.96
+  },
+  "ace_vs_evidence_only": [
+   0.7536390621804196,
+   [
+    -0.23293166622514316,
+    1.87451216165612
+   ]
+  ],
+  "ace_vs_reask_only": [
+   1.6280193666109821,
+   [
+    0.904183167867718,
+    2.485518728945364
+   ]
+  ],
+  "verdicts": {
+   "sound": {
+    "accept": 22,
+    "revise": 1,
+    "reject": 1
+   },
+   "flawed": {
+    "accept": 11,
+    "revise": 9,
+    "reject": 16
+   }
+  },
+  "errors": [
+   {
+    "case": "BS1",
+    "text": "Clouds form when rising water vapour warms and condenses.",
+    "flaw": "direction",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BS2",
+    "text": "For every force one object exerts on another, the second object exerts an equal and opposite force back.",
+    "flaw": null,
+    "verdict": "revise",
+    "flags": [
+     [
+      "Q3",
+      "overgeneralisation",
+      "absolute 'every' not licensed by evidence"
+     ]
+    ]
+   },
+   {
+    "case": "BS3",
+    "text": "Most nutrients are absorbed in the large intestine.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BS3",
+    "text": "Bile is produced by the gallbladder.",
+    "flaw": "relational",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BS5",
+    "text": "Most of an atom's mass is in its electrons.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BS5",
+    "text": "Isotopes of an element have different numbers of protons.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BH3",
+    "text": "Apollo 11 landed on the Moon on 20 July 1969.",
+    "flaw": null,
+    "verdict": "reject",
+    "flags": [
+     [
+      "Q5",
+      "inconsistent_number",
+      "re-asked answer disagrees: claim gives 20 daynum, evidence gives 24 daynum"
+     ]
+    ]
+   },
+   {
+    "case": "BH3",
+    "text": "Buzz Aldrin was the first person to walk on the Moon.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BH3",
+    "text": "Michael Collins walked on the Moon with Armstrong.",
+    "flaw": "relational",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BH4",
+    "text": "Women in the United Kingdom gained equal voting rights with men in 1918.",
+    "flaw": "number",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BH5",
+    "text": "The First Fleet was commanded by James Cook.",
+    "flaw": "relational",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BH6",
+    "text": "The Mona Lisa is painted on canvas.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   },
+   {
+    "case": "BH6",
+    "text": "Michelangelo painted the Mona Lisa.",
+    "flaw": "substitution",
+    "verdict": "accept",
+    "flags": []
+   }
+  ]
+ },
+ "seeded_mutations": {
+  "metrics": {
+   "n": 279,
+   "n_flawed": 198,
+   "n_sound": 81,
+   "hit_rate": 0.9242424242424242,
+   "false_alarm": 0.037037037037037035,
+   "d_prime": 3.1397785804841156,
+   "accuracy": 0.9354838709677419,
+   "accept_correct": 0.962962962962963,
+   "accept_incorrect": 0.0757575757575758,
+   "auc": 0.9704763686245167
+  },
+  "ci": {
+   "hit_rate": [
+    0.8871774193548386,
+    0.956731418918919
+   ],
+   "false_alarm": [
+    0.0,
+    0.08641975308641975
+   ],
+   "d_prime": [
+    2.709690513606024,
+    3.9066823077717907
+   ],
+   "accuracy": [
+    0.9074716620535126,
+    0.9614035087719298
+   ]
+  },
+  "by_flaw": {
+   "direction": {
+    "detected": 5,
+    "total": 5,
+    "recall": 1.0
+   },
+   "fabricated_cit": {
+    "detected": 81,
+    "total": 81,
+    "recall": 1.0
+   },
+   "negation": {
+    "detected": 23,
+    "total": 29,
+    "recall": 0.7931034482758621
+   },
+   "number": {
+    "detected": 24,
+    "total": 26,
+    "recall": 0.9230769230769231
+   },
+   "overgeneral": {
+    "detected": 20,
+    "total": 26,
+    "recall": 0.7692307692307693
+   },
+   "substitution": {
+    "detected": 30,
+    "total": 31,
+    "recall": 0.967741935483871
+   }
+  },
+  "examples": [
+   {
+    "text": "On Earth, the feather falls more slowly because air resistance is large compared with its weight.",
+    "flaw": null,
+    "verdict": "accept"
+   },
+   {
+    "text": "On Earth, the feather falls more rapidly because air resistance is large compared with its weight.",
+    "flaw": "direction",
+    "verdict": "reject"
+   },
+   {
+    "text": "On Earth, the feather falls more slowly because air resistance is not large compared with its weight.",
+    "flaw": "negation",
+    "verdict": "reject"
+   },
+   {
+    "text": "On Earth, the feather falls more slowly because air resistance is always large compared with its weight.",
+    "flaw": "overgeneral",
+    "verdict": "accept"
+   },
+   {
+    "text": "On Earth, the feather falls more slowly because air resistance is large compared with its weight (Lindqvist & Tanaka, 2012).",
+    "flaw": "fabricated_cit",
+    "verdict": "reject"
+   },
+   {
+    "text": "The Moon has no significant atmosphere, so there is no air resistance there.",
+    "flaw": null,
+    "verdict": "accept"
+   },
+   {
+    "text": "The Moon has not no significant atmosphere, so there is no air resistance there.",
+    "flaw": "negation",
+    "verdict": "reject"
+   },
+   {
+    "text": "The Moon has no significant atmosphere, so there is always no air resistance there.",
+    "flaw": "overgeneral",
+    "verdict": "accept"
+   },
+   {
+    "text": "The Moon has no significant atmosphere, so there is no air resistance there (Okafor & Castillo, 2014).",
+    "flaw": "fabricated_cit",
+    "verdict": "reject"
+   },
+   {
+    "text": "Without air resistance, all objects fall with the same acceleration regardless of mass.",
+    "flaw": null,
+    "verdict": "accept"
+   },
+   {
+    "text": "Without air resistance, all objects fall with the same acceleration regardless of mass (Castillo & Ferreira, 2013).",
+    "flaw": "fabricated_cit",
+    "verdict": "reject"
+   },
+   {
+    "text": "Photosynthesis happens in the chloroplasts.",
+    "flaw": null,
+    "verdict": "accept"
+   }
+  ]
+ }
+}
